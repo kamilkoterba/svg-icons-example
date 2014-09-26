@@ -4,6 +4,7 @@ body {
   background-color: #302b36;
   font-family: "Bevan", "Arial", sans-serif;
   padding: 1em;
+  font-size: 1.3em;
 }
 
 header {
@@ -20,7 +21,7 @@ header img {
   margin: 1em 0;
 }
 .schedule .talk {
-  padding: 1em;
+  padding: 1em 1em 2em;
   background-color: #4f4a56;
 }
 .schedule .map {
@@ -32,8 +33,9 @@ header img {
 }
 .schedule .left-col {
   float: left;
-  margin-right: 1em;
+  margin-right: 1.5em;
   width: 80px;
+  font-size: 0.8em;
 }
 .schedule .start-time {
   margin-bottom: 15px;

@@ -10,6 +10,7 @@ body {
 	background-color: $brand-dark;
 	font-family: "Bevan", "Arial", sans-serif;
 	padding: 1em;
+	font-size: 1.3em;
 }
 
 header {
@@ -26,7 +27,7 @@ header {
 	margin: 1em 0;
 
 	.talk {
-		padding: 1em;
+		padding: 1em 1em 2em;
 		background-color: #4f4a56;
 	}
 
@@ -40,8 +41,9 @@ header {
 
 	.left-col {
 		float: left;
-		margin-right: 1em;
+		margin-right: 1.5em;
 		width: 80px;
+		font-size: 0.8em;
 	}
 	.start-time {
 		margin-bottom: 15px;
