@@ -1,0 +1,110 @@
+@import url(../css/fonts.css);
+body {
+  -webkit-font-smoothing: none;
+  background-color: #302b36;
+  font-family: "Bevan", "Arial", sans-serif;
+  padding: 1em;
+}
+
+header {
+  background-color: #1b181e;
+  text-align: center;
+  padding: 2em 0;
+}
+header img {
+  max-width: 50%;
+}
+
+.schedule {
+  color: #fff;
+  margin: 1em 0;
+}
+.schedule .talk {
+  padding: 1em;
+  background-color: #4f4a56;
+}
+.schedule .map {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+.schedule .map img {
+  margin: 12px 0 7px;
+}
+.schedule .left-col {
+  float: left;
+  margin-right: 1em;
+  width: 80px;
+}
+.schedule .start-time {
+  margin-bottom: 15px;
+}
+.schedule .start-time, .schedule .map {
+  background-color: #fff;
+  padding: 1em 1em 0.4em;
+  color: #302b36;
+  text-align: center;
+}
+.schedule .share-icons {
+  background-color: #1b181e;
+  float: right;
+  width: 20px;
+  padding: 1em;
+}
+.schedule .share-icons img {
+  margin: 0.2em 0;
+}
+.schedule .description {
+  margin-bottom: 1em;
+}
+.schedule .speaker img {
+  margin-right: 15px;
+}
+
+.prev-next {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.prev-next a {
+  background-color: #99b41e;
+  display: block;
+  float: left;
+  padding: 0.3em 0;
+  text-align: center;
+  text-decoration: none;
+  width: calc(50% - 0.25em);
+}
+.prev-next a:hover {
+  background-color: #4f5d0f;
+}
+.prev-next .prev {
+  margin-right: 0.5em;
+}
+.prev-next img {
+  width: 10px;
+  padding: 0 1em;
+}
+
+h1, h2, h3, body {
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Bevan", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #99b41e;
+  margin: 0.5em 0;
+}
+
+a {
+  color: #fff;
+}
+
+img path {
+  fill: #0b97c4 !important;
+}
+
+/*# sourceMappingURL=main.min.css.map */

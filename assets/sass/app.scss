@@ -1,0 +1,124 @@
+@import "../css/fonts.css";
+
+$brand-teal: #239da2;
+$brand-bright-green: #99b41e;
+$brand-dark: #302b36;
+$brand-deep-dark: #1b181e;
+
+body {
+	-webkit-font-smoothing: none;
+	background-color: $brand-dark;
+	font-family: "Bevan", "Arial", sans-serif;
+	padding: 1em;
+}
+
+header {
+	background-color: $brand-deep-dark;
+	text-align: center;
+	padding: 2em 0;
+	img {
+		max-width: 50%;
+	}
+}
+
+.schedule {
+	color: #fff;
+	margin: 1em 0;
+
+	.talk {
+		padding: 1em;
+		background-color: #4f4a56;
+	}
+
+	.map {
+		font-size: 0.8em;
+		line-height: 1em;
+		img {
+			margin: 12px 0 7px;
+		}
+	}
+
+	.left-col {
+		float: left;
+		margin-right: 1em;
+		width: 80px;
+	}
+	.start-time {
+		margin-bottom: 15px;
+	}
+
+	.start-time, .map {
+		background-color: #fff;
+		padding: 1em 1em.4em;
+		color: $brand-dark;
+		text-align: center;
+	}
+
+	.share-icons {
+		background-color: $brand-deep-dark;
+		float: right;
+		width: 20px;
+		padding: 1em;
+		img {
+			margin: 0.2em 0;
+		}
+	}
+
+	.description {
+		margin-bottom: 1em;
+	}
+
+	.speaker {
+		img {
+			margin-right: 15px;
+		}
+	}
+}
+
+.prev-next {
+	overflow: hidden;
+	box-sizing: border-box;
+	a {
+		background-color: $brand-bright-green;
+		display: block;
+		float: left;
+		padding: 0.3em 0;
+		text-align: center;
+		text-decoration: none;
+		width: calc(50% - 0.25em);
+		&:hover {
+			background-color: darken($brand-bright-green, 20%);
+		}
+	}
+	.prev {
+		margin-right: 0.5em;
+	}
+
+	img {
+		width: 10px;
+		padding: 0 1em;
+	}
+}
+
+
+h1, h2, h3, body {
+	font-weight: normal;
+}
+h1 {
+	font-family: "Bevan", "Arial", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: $brand-bright-green;
+	margin: 0.5em 0;
+}
+
+a {
+	color: #fff;
+}
+
+img path {
+	fill: #0b97c4!important;
+}
