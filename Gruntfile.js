@@ -32,7 +32,8 @@ module.exports = function(grunt) {
 				options: {
 					cssprefix: '.icon-',
 					colors: {
-						brand_dark: '#302b36'
+						brand_dark: '#302b36',
+						brand_bright_green: '#99b41e'
 					}
 				}
 			}
@@ -55,7 +56,7 @@ module.exports = function(grunt) {
 				cwd: 'assets/svg/raw',
 				src: ['*.svg'],
 				dest: 'assets/svg/compressed',
-				ext: '.colors-brand_dark.svg'
+				ext: '.colors-brand_dark-brand_bright_green.svg'
 			}
 		},
 		watch: {

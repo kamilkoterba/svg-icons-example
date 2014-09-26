@@ -84,12 +84,24 @@ header {
 		padding: 1em;
 		margin-left: 1em;
 		width: 20px;
+
 		div {
 			@extend .text-hide;
 			background-size: contain;
+			cursor: pointer;
 			height: 25px;
 			margin: 20px 0;
 			width: 25px;
+		}
+		.icon-share {
+			cursor: default;
+		}
+
+		.facebook {
+			@extend .icon-facebook;
+			&:hover {
+				@extend .icon-facebook-brand_bright_green;
+			}
 		}
 	}
 
