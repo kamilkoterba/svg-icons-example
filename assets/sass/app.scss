@@ -1,4 +1,4 @@
-@import "../css/fonts.css";
+@import "fonts.scss";
 @import "../svg/output/icons.data.svg.scss";
 
 $brand-teal: #239da2;
@@ -6,27 +6,43 @@ $brand-bright-green: #99b41e;
 $brand-dark: #302b36;
 $brand-deep-dark: #1b181e;
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	-webkit-font-smoothing: none;
 	background-color: $brand-dark;
 	font-family: "Bevan", "Arial", sans-serif;
-	font-size: 1.3em;
-	padding: 1em;
+	font-size: 1.6em;
+	padding: 0 1em 1em;
 }
 
 header {
+	@extend .icon-meetjs;
 	background-color: $brand-deep-dark;
+	background-size: 90%;
+	background-position: 50% 50%;
+	float: left;
 	padding: 2em 0;
 	text-align: center;
+	width: 30%;
+	height: 0;
+	padding-bottom: 8%;
 }
 
 .schedule {
 	color: #fff;
-	margin: 1em 0;
+
+	h1 {
+		padding-top: 1em;
+	}
 
 	.talk {
-		padding: 1em 1em 2em;
+		padding: 1em 1em 1em;
 		background-color: #4f4a56;
+		clear: both;
 	}
 
 
@@ -35,7 +51,7 @@ header {
 		font-size: 1em;
 		margin-bottom: 1.5em;
 		margin-right: 1.5em;
-		width: 120px;
+		width: 130px;
 	}
 
 	.start-time, .map {
@@ -62,18 +78,18 @@ header {
 		margin-bottom: 15px;
 	}
 
-
 	.share-icons {
 		background-color: $brand-deep-dark;
 		float: right;
 		padding: 1em;
+		margin-left: 1em;
 		width: 20px;
 		div {
 			@extend .text-hide;
 			background-size: contain;
-			height: 20px;
+			height: 25px;
 			margin: 20px 0;
-			width: 20px;
+			width: 25px;
 		}
 	}
 
@@ -89,7 +105,7 @@ header {
 		height: 1.4em;
 		line-height: 1.4em;
 		margin: 1.5em 0 1em;
-		padding-left: 100px;
+		padding-left: 120px;
 		.wikia-logo {
 			height: 1.2em;
 		}
@@ -99,6 +115,7 @@ header {
 .prev-next {
 	overflow: hidden;
 	box-sizing: border-box;
+	margin-top: 2em;
 	a {
 		background-color: $brand-bright-green;
 		background-size: 10px;
@@ -137,6 +154,7 @@ h1 {
 h2 {
 	color: $brand-bright-green;
 	margin: 0.5em 0;
+	line-height: 1.1em;
 }
 
 a {
@@ -146,7 +164,7 @@ a {
 .wikia-logo {
 	@extend .icon-wikia;
 	@extend .text-hide;
-	background-position: 50% 50%;
+	background-position: 50% 100%;
 	background-size: contain;
 	display: inline-block;
 	margin-left: 20px;
