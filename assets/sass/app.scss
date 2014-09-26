@@ -1,4 +1,5 @@
 @import "../css/fonts.css";
+@import "../svg/output/icons.data.svg.scss";
 
 $brand-teal: #239da2;
 $brand-bright-green: #99b41e;
@@ -9,17 +10,14 @@ body {
 	-webkit-font-smoothing: none;
 	background-color: $brand-dark;
 	font-family: "Bevan", "Arial", sans-serif;
-	padding: 1em;
 	font-size: 1.3em;
+	padding: 1em;
 }
 
 header {
 	background-color: $brand-deep-dark;
-	text-align: center;
 	padding: 2em 0;
-	img {
-		max-width: 50%;
-	}
+	text-align: center;
 }
 
 .schedule {
@@ -31,38 +29,51 @@ header {
 		background-color: #4f4a56;
 	}
 
-	.map {
-		font-size: 0.8em;
-		line-height: 1em;
-		img {
-			margin: 12px 0 7px;
-		}
-	}
 
 	.left-col {
 		float: left;
+		font-size: 1em;
+		margin-bottom: 1.5em;
 		margin-right: 1.5em;
-		width: 80px;
-		font-size: 0.8em;
-	}
-	.start-time {
-		margin-bottom: 15px;
+		width: 120px;
 	}
 
 	.start-time, .map {
 		background-color: #fff;
-		padding: 1em 1em.4em;
+		background-position: 50% calc(100% - 15px);
+		background-size: 32px;
 		color: $brand-dark;
+		padding: 1em 1em 55px;
 		text-align: center;
+
+		&:hover {
+			background-color: darken(#fff,20%);
+		}
 	}
+
+	.map {
+		@extend .icon-location-brand_dark;
+		font-size: 0.8em;
+		line-height: 1em;
+	}
+
+	.start-time {
+		@extend .icon-clock-brand_dark;
+		margin-bottom: 15px;
+	}
+
 
 	.share-icons {
 		background-color: $brand-deep-dark;
 		float: right;
-		width: 20px;
 		padding: 1em;
-		img {
-			margin: 0.2em 0;
+		width: 20px;
+		div {
+			@extend .text-hide;
+			background-size: contain;
+			height: 20px;
+			margin: 20px 0;
+			width: 20px;
 		}
 	}
 
@@ -71,8 +82,16 @@ header {
 	}
 
 	.speaker {
-		img {
-			margin-right: 15px;
+		clear: both;
+		@extend .icon-man;
+		background-position: 45px 50%;
+		background-size: contain;
+		height: 1.4em;
+		line-height: 1.4em;
+		margin: 1.5em 0 1em;
+		padding-left: 100px;
+		.wikia-logo {
+			height: 1.2em;
 		}
 	}
 }
@@ -82,6 +101,7 @@ header {
 	box-sizing: border-box;
 	a {
 		background-color: $brand-bright-green;
+		background-size: 10px;
 		display: block;
 		float: left;
 		padding: 0.3em 0;
@@ -93,19 +113,21 @@ header {
 		}
 	}
 	.prev {
+		@extend .icon-arrow-left;
+		background-position: 20px 50%;
 		margin-right: 0.5em;
 	}
 
-	img {
-		width: 10px;
-		padding: 0 1em;
+	.next {
+		@extend .icon-arrow-right;
+		background-position: calc(100% - 20px) 50%;
 	}
 }
-
 
 h1, h2, h3, body {
 	font-weight: normal;
 }
+
 h1 {
 	font-family: "Bevan", "Arial", sans-serif;
 	text-align: center;
@@ -121,6 +143,17 @@ a {
 	color: #fff;
 }
 
-img path {
-	fill: #0b97c4!important;
+.wikia-logo {
+	@extend .icon-wikia;
+	@extend .text-hide;
+	background-position: 50% 50%;
+	background-size: contain;
+	display: inline-block;
+	margin-left: 20px;
+	width: 80px;
+}
+
+.text-hide {
+	overflow: hidden;
+	text-indent: -10000px;
 }
