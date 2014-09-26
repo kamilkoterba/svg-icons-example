@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 		sass: {                              // Task
 			dist: {                            // Target
 				options: {                       // Target options
-					style: 'expanded',
+					style: 'compressed',
 					sourcemap:'file'
 				},
 				files: {                         // Dictionary of files
@@ -32,9 +32,15 @@ module.exports = function(grunt) {
 				options: {
 					cssprefix: '.icon-',
 					colors: {
-						//white: '#fff'
+						brand_dark: '#302b36'
 					}
 				}
+			}
+		},
+		rename: {
+			moveThis: {
+				src: 'assets/svg/output/icons.data.svg.css',
+				dest: 'assets/svg/output/icons.data.svg.scss'
 			}
 		},
 		svgmin: { //minimize SVG files
@@ -49,7 +55,7 @@ module.exports = function(grunt) {
 				cwd: 'assets/svg/raw',
 				src: ['*.svg'],
 				dest: 'assets/svg/compressed',
-				ext: '.svg'
+				ext: '.colors-brand_dark.svg'
 			}
 		},
 		watch: {
@@ -66,10 +72,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-grunticon');
+	grunt.loadNpmTasks('grunt-rename');
 	grunt.loadNpmTasks('grunt-svgmin');
 
 	// Default task(s).
-	grunt.registerTask('default', ['clean', 'svgmin', 'grunticon', 'sass']);
+	grunt.registerTask('default', ['clean', 'svgmin', 'grunticon', 'rename', 'sass']);
 	grunt.registerTask('dev', ['watch']);
 
 };

@@ -8,6 +8,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-grunticon": "^1.2.13",
     "grunt-svgmin": "^1.0.0",
-    "grunt-contrib-clean": "^0.6.0"
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-rename": "^0.1.4"
   }
 }
