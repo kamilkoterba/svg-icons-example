@@ -4,6 +4,6 @@ This is an example code created for [Meet.js Summit 2014](http://summit.meetjs.p
 It implements solution using Grunt plus Sass.
 
 #### Demo
-Result can be see on http://kamilkoterba.github.io/svg-icons-example/
+Code is deployed under http://kamilkoterba.github.io/svg-icons-example/
 #### Presentation 
 Link to presentation: [Effective SVG icons management system](http://kamilkoterba.github.io/slides/meetjs-summit-2014/)
